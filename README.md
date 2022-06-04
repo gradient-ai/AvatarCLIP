@@ -1,3 +1,11 @@
+# AvatarCLIP for Gradient
+
+Use this repo to generate animated figures with a AvatarCLIP and Gradient. For the blog post this is based on, go to blog.paperspace.com/animated-3d-characters-with-avatarclip-part-1/
+
+[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/te72i7f1w/notebook/rbllk56fximgaab)
+
+This fork is not meant to replace the original repo, and is optimized for Paperspace Gradient. The original project page can be found here: https://hongfz16.github.io/projects/AvatarCLIP.html
+
 <div align="center">
 
 <h1>AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars</h1>
@@ -55,6 +63,7 @@ This repository contains the official implementation of _AvatarCLIP: Zero-Shot T
 </div>
 
 ## Updates
+
 [05/2022] [Paper](https://arxiv.org/abs/2205.08535) uploaded to arXiv. [![arXiv](https://img.shields.io/badge/arXiv-2205.08535-b31b1b.svg)](https://arxiv.org/abs/2205.08535)
 
 [05/2022] Add a [Colab Demo](https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR?usp=sharing) for avatar generation! [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dfaecX7xF3nP6fyXc8XBljV5QY1lc1TR?usp=sharing)
@@ -66,7 +75,9 @@ This repository contains the official implementation of _AvatarCLIP: Zero-Shot T
 [04/2022] AvatarCLIP is accepted to SIGGRAPH 2022 (Journal Track):partying_face:!
 
 ## Citation
+
 If you find our work useful for your research, please consider citing the paper:
+
 ```
 @article{hong2022avatarclip,
     title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
@@ -130,6 +141,7 @@ This quick fix is for a rendering issue where objects behide the camera will als
 ## Data Preparation
 
 ### Download SMPL Models
+
 Register and download SMPL models [here](https://smpl.is.tue.mpg.de/). Put the downloaded models in the folder `smpl_models`. The folder structure should look like
 
 ```
@@ -143,6 +155,7 @@ Register and download SMPL models [here](https://smpl.is.tue.mpg.de/). Put the d
 ```
 
 ### Download Pretrained Models & Other Data
+
 This download is only for coarse shape generation. You can skip if you only want to use other parts. Download the pretrained weights and other required data [here](https://1drv.ms/u/s!AjLpFg-f48ljgZl9qpU7_6ZA9B7qwA?e=pPcHIG). Put them in the folder `AvatarGen` so that the folder structure should look like
 
 ```
@@ -157,7 +170,6 @@ This download is only for coarse shape generation. You can skip if you only want
             ├── smpl_uv.mtl
             └── smpl_uv.obj
 ```
-
 
 ## Avatar Generation
 
@@ -210,18 +222,16 @@ The final high resolution mesh will be stored as `AvatarCLIP/AvatarGen/Appearanc
 
 For the convenience of using the generated avatar with modern graphics pipeline, we also provide scripts to rig the avatar and convert to FBX format. See the instructions [here](./Avatar2FBX/README.md).
 
-
 ## Motion Generation
 
 TBA
-
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 ## Related Works
+
 <p>There are lots of wonderful works that inspired our work or came around the same time as ours.</p>
 <p><a href="https://arxiv.org/abs/2112.01455">Dream Fields</a> enables zero-shot text-driven general 3D object generation using CLIP and NeRF.</p>
 <p><a href="https://arxiv.org/abs/2112.03221">Text2Mesh</a> proposes to edit a template mesh by predicting offsets and colors per vertex using CLIP and differentiable rendering.</p>
