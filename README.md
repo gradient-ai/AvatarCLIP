@@ -2,7 +2,7 @@
 
 Use this repo to generate animated figures with a AvatarCLIP and Gradient. For the blog post this is based on, go to blog.paperspace.com/animated-3d-characters-with-avatarclip-part-1/
 
-[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/te72i7f1w/notebook/rbllk56fximgaab)
+[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/gradient-ai/AvatarCLIP/blob/main/AvatarCLIP.ipynb?machine=Free-GPU)
 
 This fork is not meant to replace the original repo, and is optimized for Paperspace Gradient. The original project page can be found here: https://hongfz16.github.io/projects/AvatarCLIP.html
 
